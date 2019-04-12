@@ -1,0 +1,61 @@
+<ion-header color = "background1">
+  <ion-toolbar color = "background" >
+    <ion-title color = "icon"> <ion-icon color = "icon" name="paper"></ion-icon>
+      Pedidos
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding> 
+
+<ion-list >
+
+  <p>Pizzas disponíveis:</p>
+
+    <ion-item color = "background">           
+      <ion-label>Queijo: R$40,00</ion-label>
+  </ion-item>
+    <ion-item color = "background">
+      <ion-label>Calabresa: R$41,00 </ion-label>
+  </ion-item>
+    <ion-item color = "background">
+      <ion-label>Camarão: R$50,00</ion-label>
+  </ion-item>
+    <ion-item color = "background">
+      <ion-label>Atum: R$52,00</ion-label>
+  </ion-item>
+</ion-list>
+
+<ion-list >
+
+    <p>Refrigerantes disponíveis:</p>
+        
+    <ion-item color = "background">
+      <ion-label>Coca-Cola(2l): R$7,00</ion-label>
+  </ion-item>
+    <ion-item color = "background">
+      <ion-label>Guraná Antarctica(2l): R$6,00  </ion-label>
+  </ion-item>
+    <ion-item color = "background">
+      <ion-label>Coca-Cola(350ml): R$3,00</ion-label>
+  </ion-item>
+    <ion-item color = "background">
+      <ion-label>Fanta Uva(350ml): R$3,00</ion-label>
+  </ion-item>
+</ion-list>
+<br>
+
+<ion-label>Valor da Pizza escolhida:</ion-label>
+<ion-input type = "number" [(ngModel)] = "n1" ></ion-input><br>
+<ion-label>Valor do Refrigerante escolhido:</ion-label>
+<ion-input type = "number" [(ngModel)] = "n2"></ion-input><br>
+<ion-button color = "button" size="full" (click) = "soma()" > Somar </ion-button><br><br>
+<ion-button color = "button" size = "full" (click) = "limpar()">Nova soma</ion-button><br>
+
+<!--<ion-button (click) = "soma()">Somar</ion-button><br><br> -->
+<ion-label>Total: {{resultado}}</ion-label><br><br>
+
+<ion-button color = "button" size="full" href = "/home"> <ion-icon name="undo"></ion-icon> Tela inicial  </ion-button><br>
+<ion-button color = "button" expand = "full" href = "/pagina2">Finalizar Pedido </ion-button>
+
+</ion-content>
